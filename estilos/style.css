@@ -10,7 +10,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: black;
 }
 
 body {
@@ -46,30 +45,29 @@ section#redes-sociais {
   flex-direction: column;
   position: absolute;
   right: 10px;
-  top: 10px;
+  top: 20px;
 }
 
 section#redes-sociais img {
   width: 50px;
   margin: 10px;
   border-radius: 50%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
 
 section#redes-sociais img:hover {
-    border: 2px solid rgba(255, 255, 255, 0.534);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-    transition: transform 0.5s, border 0.4s;
+  border: 2px solid rgba(255, 255, 255, 0.534);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+  transition: transform 0.5s, border 0.4s;
 }
 
 @media (max-width: 500px) {
-
   section#redes-sociais {
-  right: 0.5px;
-  top: auto;
-  bottom: auto;
+    right: 1px;
+    top: auto;
+    bottom: auto;
   }
 
   main {
@@ -79,5 +77,26 @@ section#redes-sociais img:hover {
   section#telefone {
     margin-left: 10px;
   }
-
 }
+
+@media (max-height: 650px) {
+  section#redes-sociais {
+    right: 5px;
+    margin: auto;
+    top: auto;
+  }
+
+  main {
+    justify-content: space-between;
+  }
+
+  section#telefone {
+    margin:auto;
+  }
+}
+
+
+
+
+
+
